@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-dark greenmenu fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">EcoBee</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end greenmenu text-white" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="finddrones.html">Find Drones</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle text-white" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services
+                    </a>
+                    <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="services.html">View</a></li>
+                    <li>
+                        <hr class="dropdown-divider">
+                    </li>
+
+                    <!--popup with closing mark-->
+                    <li>
+                        <a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Registration/Login</a>
+                    </li>
+                </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="contact.html">Contact</a>
+                </li>
+                </ul>
+                <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </nav>
+<!--MODAL-->
+    <div class="modal fade greenmenu" id="loginModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Registration / Login</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1">
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">
+                            Remember Me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-success">
+                        Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--CAROUSEL-->
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+            <img src="assets/img/b1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/img/b2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+            <img src="assets/img/b3.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <div id="box">
+        <p>"Investments in agriculture
+            are the best weapons against
+            hunger and poverty and they
+            have made life better for
+            billions of people."</p>
+    </div>
+    <div id="abt">
+        <hr>
+        <h2>About Us</h2>
+        <p>SPEED is an agricultural drone service company dedicated to helping farmers adopt modern and efficient farming practices. We specialize in drone-based spraying solutions for fertilizers, pesticides, insecticides, herbicides, Nano Urea, Nano DAP, and other crop nutrients.</p>
+        <p>Using advanced drone technology, we ensure precise and uniform spraying across fields, reducing labor requirements, saving time, and minimizing the wastage of agricultural inputs. Our services are designed to improve crop health, increase productivity, and support sustainable farming methods.</p>
+        <p>At SPEED, we believe that technology can play a vital role in the future of agriculture. Our team is committed to providing reliable, safe, and cost-effective drone services that make farming smarter and more efficient. By combining innovation with agricultural expertise, we aim to empower farmers and contribute to the growth of modern agriculture.</p>
+        <p>We strive to build long-term relationships with farming communities by delivering quality service, professional support, and solutions that meet the evolving needs of the agricultural sector.</p>
+        <hr>
+    </div>
+<!--GRID-->
+    <div class="container my-5">
+        <div class="row align-items-center">       
+            <div class="col-md-5">
+                <img src="assets/img/vm.png" class="img-fluid rounded shadow-lg" alt="Vision and Mission">
+            </div>
+            <div class="col-md-7 vm">
+                <h2>Vision & Mission</h2>
+                <h4>Vision</h4>
+                <p>
+                    To transform modern agriculture through innovative drone technology,
+                    enabling farmers to achieve higher productivity and sustainability.
+                </p>
+                <h4>Mission</h4>
+                <p>
+                    To provide reliable, efficient, and cost-effective drone spraying
+                    services that support farmers with advanced agricultural solutions.
+                </p>
+            </div>
+        </div>
+    </div>
+    <footer class="greenmenu text-white pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>EcoBee</h5>
+                    <p>
+                        Providing advanced drone spraying solutions for modern and
+                        sustainable agriculture.
+                    </p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="services.html" class="text-white text-decoration-none">Services</a></li>
+                        <li><a href="gallery.html" class="text-white text-decoration-none">Gallery</a></li>
+                        <li><a href="finddrones.html" class="text-white text-decoration-none">Drones</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contact Us</h5>
+                    <p>📍 Dindigul, Tamil Nadu</p>
+                    <p>📞 +91 XXXXX XXXXX</p>
+                    <p>✉ info@speeddrones.com</p>
+                </div>
+            </div>
+            <hr>
+            <div class="text-center">
+                <p>&copy; 2026 EcoBee Agricultural Drone Services. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  </body>
+</html>

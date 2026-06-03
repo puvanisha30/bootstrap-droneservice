@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spicy+Rice&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
+body {padding-top: 100px; background-image: url("../img/download.jpg"); background-size: cover;}
+/*nav.greenmenu{ padding-bottom: 50px;}*/
+.navbar-brand{font-size: 42px; font-family: "Spicy+Rice", serif;}
+.greenmenu {background-color: #156025; color: white;}
+#box {margin: 50px 20px 50px 20px; background: #ff976b;}
+#box p {font-family: "Play", sans-serif; font-size: 40px;}
+#abt {margin: 0px 20px 0px 20px;}
+#abt h2{font-family: "Rammetto+One", cursive; font-size: 40px; color:#f75505;}
+.vm h2{font-family: "Rammetto+One", cursive; font-size: 40px; color:#f75505;}
+.vm h4{font-family: "Rammetto+One", cursive; font-size: 38px; color: #cdbf06;}
+.greenmenu .accordion-item {border: 1px solid #156025;}
+.greenmenu .accordion-button {background-color: white; color: black; box-shadow: none;}
+.greenmenu .accordion-button:not(.collapsed) {background-color: #156025 !important; color: white !important;}
+.greenmenu .accordion-body {background-color: white; color: black;}
+.greenmenu .accordion-button:focus {box-shadow: none;}
+.greenmenu .accordion-button::after {transition: filter 0.2s;}
+.greenmenu .accordion-button:not(.collapsed)::after {filter: brightness(0) invert(1);}
+.figure-img {width: 363px; height: 270px; object-fit: cover;}
+.figure {margin: 0px 0px 100px 46px;}
+.image {width: 363px; height: 270px; margin: 0px 0px 100px 46px; border: 3px solid #156025; outline: 3px solid #6ef572; outline-offset: 4px border-radius: 10px;}
+.container h2 {font-family: "Rammetto+One", cursive; font-size: 40px; color:#f75505;}
